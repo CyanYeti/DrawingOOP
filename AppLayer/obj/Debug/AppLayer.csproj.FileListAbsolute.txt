@@ -1,0 +1,43 @@
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\bin\Debug\AppLayer.dll
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\bin\Debug\AppLayer.pdb
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\obj\Debug\AppLayer.dll
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.dll
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.dll
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\bin\Debug\AppLayer.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.csproj.AssemblyReference.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.csproj.CoreCompileInputs.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.dll
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.pdb

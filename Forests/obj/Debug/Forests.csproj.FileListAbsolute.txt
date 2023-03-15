@@ -1,0 +1,157 @@
+Y:\tmp\Forests\Forests\bin\Debug\Forests.exe.config
+Y:\tmp\Forests\Forests\bin\Debug\Forests.exe
+Y:\tmp\Forests\Forests\bin\Debug\Forests.pdb
+Y:\tmp\Forests\Forests\obj\Debug\Forests.MainForm.resources
+Y:\tmp\Forests\Forests\obj\Debug\Forests.Properties.Resources.resources
+Y:\tmp\Forests\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+Y:\tmp\Forests\Forests\obj\Debug\Forests.exe
+Y:\tmp\Forests\Forests\obj\Debug\Forests.pdb
+\\psf\Home\Desktop\Forests\Forests\bin\Debug\Forests.exe.config
+\\psf\Home\Desktop\Forests\Forests\obj\Debug\Forests.exe
+\\psf\Home\Desktop\Forests\Forests\obj\Debug\Forests.pdb
+\\psf\Home\Desktop\Forests\Forests\bin\Debug\Forests.exe
+\\psf\Home\Desktop\Forests\Forests\bin\Debug\Forests.pdb
+\\psf\Home\Desktop\Forests\Forests\obj\Debug\Forests.MainForm.resources
+\\psf\Home\Desktop\Forests\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\psf\Home\Desktop\Forests\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\psf\Home\Desktop\Forests - Version 2 - Command Pattern\Forests\bin\Debug\Forests.exe.config
+\\psf\Home\Desktop\Forests - Version 2 - Command Pattern\Forests\obj\Debug\Forests.exe
+\\psf\Home\Desktop\Forests - Version 2 - Command Pattern\Forests\obj\Debug\Forests.pdb
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 -More  Improvements - a\Forests\bin\Debug\Forests.exe.config
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 -More  Improvements - a\Forests\obj\Debug\Forests.exe
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 -More  Improvements - a\Forests\obj\Debug\Forests.pdb
+\\psf\Home\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.exe.config
+\\psf\Home\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.exe
+\\psf\Home\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.pdb
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.exe.config
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.exe
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.pdb
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.MainForm.resources
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.Properties.Resources.resources
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.exe
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.pdb
+Y:\Box Sync\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 4 - Invoker and Undos\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.pdb
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.exe.config
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.exe
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.pdb
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.MainForm.resources
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.Properties.Resources.resources
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.exe
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.pdb
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\AppLayer.dll
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 1 - Flyweights\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\AppLayer.pdb
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\Forests.exe.config
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.exe
+Y:\Dropbox\USU\Classes\SoftwareEngineeringExamples\ForestDrawing\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 2 - Simple Command Pattern with No Invoker\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 3 - Command Pattern with an Invoker\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 4 - Undo and Redo\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\USU\Classes\Software Engineering Examples\Forest Drawing - Flyweight and Command Patterns\Forests - Version 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.LabelBoxForm.resources
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.pdb
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.pdb
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.dll
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.pdb
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.LabelBoxForm.resources
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.MainForm.resources
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.Properties.Resources.resources
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.GenerateResource.Cache
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe.config
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.exe
+\\Mac\Dropbox\UnderGit\examples\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.AssemblyReference.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.SuggestedBindingRedirects.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.exe
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe.config
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.exe
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\Forests.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.dll
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\bin\Debug\AppLayer.pdb
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.LabelBoxForm.resources
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.MainForm.resources
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.Properties.Resources.resources
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.GenerateResource.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.CoreCompileInputs.cache
+N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\Forests\obj\Debug\Forests.csproj.CopyComplete
