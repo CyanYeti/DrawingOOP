@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Command\AddBoxCommand.cs" />
     <Compile Include="Command\AddLineCommand.cs" />
+    <Compile Include="Command\ExportCommand.cs" />
     <Compile Include="Command\SetBackgroundCommand.cs" />
     <Compile Include="Command\Command.cs" />
     <Compile Include="Command\AddTreeCommand.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Command\SaveCommand.cs" />
     <Compile Include="Command\SelectCommand.cs" />
     <Compile Include="Command\UndoCommand.cs" />
+    <Compile Include="DrawingComponents\Background.cs" />
     <Compile Include="DrawingComponents\Drawing.cs" />
     <Compile Include="DrawingComponents\Element.cs" />
     <Compile Include="DrawingComponents\GraphicsWithSelection.cs" />

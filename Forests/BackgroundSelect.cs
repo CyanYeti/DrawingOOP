@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,7 @@ namespace Forests
             this.ColorSelect.Items.Add("Green");
             this.ColorSelect.Items.Add("Blue");
             this.ColorSelect.Items.Add("Black");
+            this.ColorSelect.Items.Add("Red");
             this.ColorSelect.Items.Add("White");
             this.ColorSelect.Items.Add("Yellow");
             this.ColorSelect.Items.Add("Brown");
@@ -65,14 +67,20 @@ namespace Forests
             
             if (this.ColorSelect.SelectedIndices.Count > 0)
             {
-                Color color = Color.FromName(this.ColorSelect.SelectedItems[0].ToString());
-                Bitmap tempBMP = new Bitmap(1, 1);
-                tempBMP.SetPixel(0, 0, color);
-                BackgroundMap = new Bitmap(tempBMP, 1000, 1000);
+                Color color = Color.FromName(this.ColorSelect.SelectedItems[0].Text.ToString());
+                Bitmap tempBMP = new Bitmap(100, 100); // This gets resized later by the draw function
 
-                this.DialogResult = DialogResult.OK;
 
-                this.Close();
+                using (Graphics tempGraph = Graphics.FromImage(tempBMP))
+                {
+                    tempGraph.Clear(color);
+                    BackgroundMap = tempBMP;
+
+                    this.DialogResult = DialogResult.OK;
+
+                    this.Close();
+                }
+
             }
 
             

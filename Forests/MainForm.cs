@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Windows.Forms;
 using AppLayer.Command;
@@ -83,6 +84,7 @@ namespace Forests
         private void newButton_Click(object sender, EventArgs e)
         {
             CommandFactory.Instance.CreateAndDo("new");
+            SetBackgroundBtn_Click(sender, e); //1234: requirement 1
         }
 
         private void ClearOtherSelectedTools(ToolStripButton ignoreItem)
@@ -279,6 +281,8 @@ namespace Forests
                 if (map == DialogResult.OK)
                 {
                     backgroundMap = backgroundSelect.BackgroundMap;
+                    // Resize the selected image/color to be our canvas size before passing it along
+                    backgroundMap = new Bitmap(backgroundMap, _imageBuffer.Width, _imageBuffer.Height);
                     CommandFactory.Instance.CreateAndDo("setbackground", backgroundMap);
                 }
             }
@@ -355,5 +359,19 @@ namespace Forests
             return p4;
         }
 
+        private void ExportPNG_Click(object sender, EventArgs e)
+        {
+            var dialog = new SaveFileDialog
+            {
+                DefaultExt = "png",
+                RestoreDirectory = true,
+                Filter = @"PNG files (*.png)|*.png|All files (*.*)|*.*"
+            };
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                CommandFactory.Instance.CreateAndDo("export", dialog.FileName, _imageBuffer); // _imageBuffer is the image everything has been drawn to
+            }
+        }
     }
 }

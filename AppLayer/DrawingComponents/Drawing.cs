@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
+using System.Text;
 
 namespace AppLayer.DrawingComponents
 {
@@ -14,9 +15,11 @@ namespace AppLayer.DrawingComponents
     {
         private static readonly DataContractJsonSerializer JsonSerializer =
                 new DataContractJsonSerializer(typeof(List<Element>), new [] { typeof(Element), typeof(Tree), typeof(TreeWithAllState), typeof(TreeExtrinsicState), typeof(LabeledBox), typeof(Line) });
+        private static readonly DataContractJsonSerializer JsonSerializerBackground =
+                new DataContractJsonSerializer(typeof(List<Background>), new[] { typeof(Background) });
 
         private readonly List<Element> _elements = new List<Element>();
-        private Bitmap _background;
+        private readonly List<Background> _backgrounds = new List<Background>();
         private readonly object _myLock = new object();
 
         public bool IsDirty { get; set; } = true;
@@ -42,8 +45,22 @@ namespace AppLayer.DrawingComponents
         }
 
         public void LoadFromStream(Stream stream)
-        {
-            var loadedElements = JsonSerializer.ReadObject(stream) as List<Element>;
+        { 
+            // The file has objects for the elements and the backgrounds seperated by an @ symbol
+            StreamReader reader = new StreamReader(stream);
+            string doc = reader.ReadToEnd();
+            string[] splitDoc = doc.Split('@');
+
+            // split the files, set back to bytes and deserialize them
+            // Requirement 6
+            byte[] splitBytesElements = Encoding.UTF8.GetBytes(splitDoc[0]);
+            MemoryStream elementsStream = new MemoryStream(splitBytesElements);
+            var loadedElements = JsonSerializer.ReadObject(elementsStream) as List<Element>;
+
+            byte[] splitBytesBackgrounds = Encoding.UTF8.GetBytes(splitDoc[1]);
+            MemoryStream backgroundsStream = new MemoryStream(splitBytesBackgrounds);
+            var loadedBackgrounds = JsonSerializerBackground.ReadObject(backgroundsStream) as List<Background>;
+
 
             if (loadedElements == null || loadedElements.Count == 0) return;
 
@@ -63,6 +80,14 @@ namespace AppLayer.DrawingComponents
                         _elements.Add(element);
                     }
                 }
+                if (loadedElements != null && loadedElements.Count != 0)
+                { 
+                    foreach (var background in loadedBackgrounds)
+                    {
+                        background.convertBytesToMap();
+                        _backgrounds.Add(background);
+                    }
+                }
                 IsDirty = true;
             }
         }
@@ -72,6 +97,13 @@ namespace AppLayer.DrawingComponents
             lock (_myLock)
             {
                 JsonSerializer.WriteObject(stream, _elements);
+                byte[] escape = { Convert.ToByte('@') };
+                stream.Write(escape, 0, 1);
+                foreach (var background in _backgrounds)
+                {
+                    background.convertMapToBytes();
+                }
+                JsonSerializerBackground.WriteObject(stream, _backgrounds);
             }
         }
 
@@ -139,11 +171,9 @@ namespace AppLayer.DrawingComponents
             {
                 if (!IsDirty && !redrawEvenIfNotDirty) return false;
 
-                graphics.Clear(Color.White);
-                if (_background != null ) {
-                    Console.WriteLine("Should be setting BG");
-                    Console.WriteLine(_background.ToString());
-                    graphics.DrawImage(_background, new Point(0, 0));
+                graphics.Clear(Color.White); // White as default background
+                if (_backgrounds.Count > 0 ) {
+                    graphics.DrawImage(_backgrounds.Last().map, new Point(0, 0));
                 }
                 foreach (var t in _elements)
                     t.Draw(graphics);
@@ -152,14 +182,23 @@ namespace AppLayer.DrawingComponents
             return true;
         }
 
-        public bool SetBackground(Bitmap background)
+        public bool SetBackground(Background background)
         {
             if (background == null) return false;
             lock (_myLock)
             {
-                Console.WriteLine("Set Backgound", background.ToString());
-                _background = background;
+                _backgrounds.Add(background);
                 IsDirty= true;
+            }
+            return true;
+        }
+        public bool RemoveLastBackground()
+        {
+            if (_backgrounds == null) return false;
+            lock (_myLock)
+            {
+                _backgrounds.RemoveAt(_backgrounds.Count - 1);
+                IsDirty = true;
             }
             return true;
         }

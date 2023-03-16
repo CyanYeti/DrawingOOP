@@ -101,6 +101,10 @@ namespace AppLayer.Command
                 case "SETBACKGROUND":
                     command = new SetBackgroundCommand(commandParameters);
                     break;
+                //1234
+                case "EXPORT":
+                    command = new ExportCommand(commandParameters);
+                    break;
             }
 
             if (command != null)

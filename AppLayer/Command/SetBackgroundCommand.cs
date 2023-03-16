@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppLayer.DrawingComponents;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,13 +10,15 @@ namespace AppLayer.Command
 {
     internal class SetBackgroundCommand : Command
     {
-        private Bitmap background;
+        private Background background;
 
         internal SetBackgroundCommand(params object[] commandParameters)
         {
             if (commandParameters.Length > 0)
             {
-                background = commandParameters[0] as Bitmap;
+                Bitmap tempbmp = commandParameters[0] as Bitmap;
+                background = new Background();
+                background.map = tempbmp;
             }
         }
 
@@ -27,12 +30,12 @@ namespace AppLayer.Command
 
         internal override void Redo()
         {
-            throw new NotImplementedException();
+            Execute();
         }
 
         internal override void Undo()
         {
-            throw new NotImplementedException();
+            TargetDrawing.RemoveLastBackground(); //When we are called we are the last background
         }
     }
 }

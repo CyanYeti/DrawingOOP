@@ -55,6 +55,7 @@
             this.tree07Button = new System.Windows.Forms.ToolStripButton();
             this.lineButton = new System.Windows.Forms.ToolStripButton();
             this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
+            this.ExportPNG = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,7 @@
             this.newButton,
             this.openButton,
             this.saveButton,
+            this.ExportPNG,
             this.deleteButton,
             this.undoButton,
             this.redoButton,
@@ -337,6 +339,16 @@
             this.labelBoxButton.Text = "Label Box";
             this.labelBoxButton.Click += new System.EventHandler(this.labelBoxButton_Click);
             // 
+            // ExportPNG
+            // 
+            this.ExportPNG.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ExportPNG.Image = ((System.Drawing.Image)(resources.GetObject("ExportPNG.Image")));
+            this.ExportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ExportPNG.Name = "ExportPNG";
+            this.ExportPNG.Size = new System.Drawing.Size(36, 61);
+            this.ExportPNG.Text = "Export To PNG";
+            this.ExportPNG.Click += new System.EventHandler(this.ExportPNG_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,6 +399,7 @@
         private System.Windows.Forms.ToolStripButton lineButton;
         private System.Windows.Forms.ToolStripButton labelBoxButton;
         private System.Windows.Forms.ToolStripButton SetBackgroundBtn;
+        private System.Windows.Forms.ToolStripButton ExportPNG;
     }
 }
 
