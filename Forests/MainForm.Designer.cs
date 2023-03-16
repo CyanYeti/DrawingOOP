@@ -88,7 +88,6 @@
             this.saveButton,
             this.ExportPNG,
             this.deleteButton,
-            this.MoveSelectedButton,
             this.undoButton,
             this.redoButton,
             this.SetBackgroundBtn});
@@ -189,6 +188,7 @@
             this.drawingToolStrip.ImageScalingSize = new System.Drawing.Size(64, 64);
             this.drawingToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pointerButton,
+            this.MoveSelectedButton,
             this.toolStripSeparator2,
             this.scaleLabel,
             this.scale,
@@ -205,7 +205,7 @@
             this.drawingToolStrip.Location = new System.Drawing.Point(0, 64);
             this.drawingToolStrip.Name = "drawingToolStrip";
             this.drawingToolStrip.Padding = new System.Windows.Forms.Padding(0, 8, 1, 0);
-            this.drawingToolStrip.Size = new System.Drawing.Size(93, 677);
+            this.drawingToolStrip.Size = new System.Drawing.Size(93, 712);
             this.drawingToolStrip.TabIndex = 3;
             this.drawingToolStrip.Text = "Tools";
             // 
@@ -353,12 +353,13 @@
             // 
             // MoveSelectedButton
             // 
+            this.MoveSelectedButton.CheckOnClick = true;
             this.MoveSelectedButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.MoveSelectedButton.Image = ((System.Drawing.Image)(resources.GetObject("MoveSelectedButton.Image")));
             this.MoveSelectedButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MoveSelectedButton.Name = "MoveSelectedButton";
-            this.MoveSelectedButton.Size = new System.Drawing.Size(36, 61);
-            this.MoveSelectedButton.Text = "Move Selected";
+            this.MoveSelectedButton.Size = new System.Drawing.Size(90, 68);
+            this.MoveSelectedButton.Text = "Move Selection";
             this.MoveSelectedButton.Click += new System.EventHandler(this.MoveSelectedButton_Click);
             // 
             // MainForm
@@ -366,7 +367,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(914, 741);
+            this.ClientSize = new System.Drawing.Size(914, 776);
             this.Controls.Add(this.drawingToolStrip);
             this.Controls.Add(this.fileToolStrip);
             this.Controls.Add(this.drawingPanel);

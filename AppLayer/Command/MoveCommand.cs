@@ -11,34 +11,50 @@ namespace AppLayer.Command
     internal class MoveCommand : Command
     {
         private Point moveTo { get; set; }
-        private Element previousElement { get; set; }
+        private Point moveFrom { get; set; }
         private Element selected;
         internal MoveCommand(params object[] commandParameters)
         {
+            //if (commandParameters.Length > 0)
+            //{
+            //    selected = commandParameters[0] as Element;
+            //}
             if (commandParameters.Length > 0)
             {
-                selected = commandParameters[0] as Element;
-            }
-            if (commandParameters.Length > 1)
-            {
-                moveTo = (Point) commandParameters[1];
+                moveTo = (Point) commandParameters[0];
             }
         }
         public override bool Execute()
         {
-            previousElement = TargetDrawing.
-            TargetDrawing.MoveSelected(selected, location);
+            selected = TargetDrawing.GetSelected();
+            if (selected == null) return false;
+            moveFrom = selected.getLocation();
+            TargetDrawing.DeleteElement(selected);
+
+            //previousElement = previousElement;
+
+            selected.MoveToPoint(moveTo);
+            TargetDrawing.Add(selected);
+
+            //previousElement.IsSelected = false;
             return true;
         }
 
         internal override void Redo()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("REDO");
+            TargetDrawing.DeleteElement(selected);
+            selected.MoveToPoint(moveTo);
+            TargetDrawing.Add(selected);
         }
 
         internal override void Undo()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("UNDO");
+            TargetDrawing.DeleteElement(selected);
+            selected.MoveToPoint(moveFrom);
+            TargetDrawing.Add(selected);
+
         }
     }
 }

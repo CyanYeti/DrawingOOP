@@ -165,7 +165,7 @@ namespace Forests
                     CommandFactory.Instance.CreateAndDo("select", e.Location);
                     break;
                 case PossibleModes.Moving:
-                    CommandFactory.Instance.CreateAndDo("move", _currentTreeResource, e.Location);
+                    CommandFactory.Instance.CreateAndDo("move", e.Location);
                     break;
             }
 
@@ -390,6 +390,7 @@ namespace Forests
             }
             else
             {
+                Console.WriteLine("Deselected");
                 CommandFactory.Instance.CreateAndDo("deselect"); // Im not sure we need this for move
                 _mode = PossibleModes.None;
             }

@@ -15,5 +15,9 @@ namespace AppLayer.DrawingComponents
             Location= point;
             return true;
         }
+        public override Point getLocation()
+        {
+            return Location;
+        }
     }
 }
