@@ -105,6 +105,9 @@ namespace AppLayer.Command
                 case "EXPORT":
                     command = new ExportCommand(commandParameters);
                     break;
+                case "MOVE":
+                    command = new MoveCommand(commandParameters);
+                    break;
             }
 
             if (command != null)

@@ -202,6 +202,20 @@ namespace AppLayer.DrawingComponents
             }
             return true;
         }
+        public Element GetSelected()
+        {
+            foreach (var element in _elements)
+            {
+                if (element.IsSelected == true) return element;
+            }
+            return null;
+        }
+        public bool MoveSelected(Element selected, Point oldLocation, Point newLocation)
+        {
+            Element toChange = FindElementAtPosition(oldLocation);
+            
+            return true;
+        }
 
     }
 }

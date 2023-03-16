@@ -31,7 +31,8 @@ namespace Forests
             TreeDrawing,
             LineDrawing,
             BoxDrawing,
-            Selection
+            Selection,
+            Moving
         };
 
         private PossibleModes _mode = PossibleModes.None;
@@ -83,7 +84,7 @@ namespace Forests
 
         private void newButton_Click(object sender, EventArgs e)
         {
-            CommandFactory.Instance.CreateAndDo("new");
+            CommandFactory.Instance.CreateAndDo("new"); // TODO check that we are clearing everything correctly
             SetBackgroundBtn_Click(sender, e); //1234: requirement 1
         }
 
@@ -162,6 +163,9 @@ namespace Forests
                     break;
                 case PossibleModes.Selection:
                     CommandFactory.Instance.CreateAndDo("select", e.Location);
+                    break;
+                case PossibleModes.Moving:
+                    CommandFactory.Instance.CreateAndDo("move", _currentTreeResource, e.Location);
                     break;
             }
 
@@ -371,6 +375,23 @@ namespace Forests
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 CommandFactory.Instance.CreateAndDo("export", dialog.FileName, _imageBuffer); // _imageBuffer is the image everything has been drawn to
+            }
+        }
+
+        private void MoveSelectedButton_Click(object sender, EventArgs e)
+        {
+            var button = sender as ToolStripButton;
+            ClearOtherSelectedTools(button);
+
+            if (button != null && button.Checked)
+            {
+                _mode = PossibleModes.Moving;
+                //_currentTreeResource = string.Empty;
+            }
+            else
+            {
+                CommandFactory.Instance.CreateAndDo("deselect"); // Im not sure we need this for move
+                _mode = PossibleModes.None;
             }
         }
     }

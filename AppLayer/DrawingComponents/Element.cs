@@ -14,5 +14,6 @@ namespace AppLayer.DrawingComponents
         public virtual void Draw(Graphics graphics) { }
 
         public virtual bool ContainsPoint(Point point) { return false; }
+        public virtual bool MoveToPoint (Point point) { return false; }
     }
 }

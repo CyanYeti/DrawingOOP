@@ -10,5 +10,10 @@ namespace AppLayer.DrawingComponents
         public static Size ToolSize { get; set; } = new Size() { Width = 64, Height = 64};
         public virtual Point Location { get; set; } = new Point(0, 0);
         public virtual Size Size { get; set; } = new Size(0, 0);
+        public override bool MoveToPoint(Point point)
+        {
+            Location= point;
+            return true;
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.newButton = new System.Windows.Forms.ToolStripButton();
             this.openButton = new System.Windows.Forms.ToolStripButton();
             this.saveButton = new System.Windows.Forms.ToolStripButton();
+            this.ExportPNG = new System.Windows.Forms.ToolStripButton();
             this.deleteButton = new System.Windows.Forms.ToolStripButton();
             this.undoButton = new System.Windows.Forms.ToolStripButton();
             this.redoButton = new System.Windows.Forms.ToolStripButton();
@@ -55,7 +56,7 @@
             this.tree07Button = new System.Windows.Forms.ToolStripButton();
             this.lineButton = new System.Windows.Forms.ToolStripButton();
             this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
-            this.ExportPNG = new System.Windows.Forms.ToolStripButton();
+            this.MoveSelectedButton = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +88,7 @@
             this.saveButton,
             this.ExportPNG,
             this.deleteButton,
+            this.MoveSelectedButton,
             this.undoButton,
             this.redoButton,
             this.SetBackgroundBtn});
@@ -128,6 +130,16 @@
             this.saveButton.Size = new System.Drawing.Size(61, 61);
             this.saveButton.Text = "Save Drawing";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // ExportPNG
+            // 
+            this.ExportPNG.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ExportPNG.Image = ((System.Drawing.Image)(resources.GetObject("ExportPNG.Image")));
+            this.ExportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ExportPNG.Name = "ExportPNG";
+            this.ExportPNG.Size = new System.Drawing.Size(36, 61);
+            this.ExportPNG.Text = "Export To PNG";
+            this.ExportPNG.Click += new System.EventHandler(this.ExportPNG_Click);
             // 
             // deleteButton
             // 
@@ -339,15 +351,15 @@
             this.labelBoxButton.Text = "Label Box";
             this.labelBoxButton.Click += new System.EventHandler(this.labelBoxButton_Click);
             // 
-            // ExportPNG
+            // MoveSelectedButton
             // 
-            this.ExportPNG.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ExportPNG.Image = ((System.Drawing.Image)(resources.GetObject("ExportPNG.Image")));
-            this.ExportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ExportPNG.Name = "ExportPNG";
-            this.ExportPNG.Size = new System.Drawing.Size(36, 61);
-            this.ExportPNG.Text = "Export To PNG";
-            this.ExportPNG.Click += new System.EventHandler(this.ExportPNG_Click);
+            this.MoveSelectedButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MoveSelectedButton.Image = ((System.Drawing.Image)(resources.GetObject("MoveSelectedButton.Image")));
+            this.MoveSelectedButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MoveSelectedButton.Name = "MoveSelectedButton";
+            this.MoveSelectedButton.Size = new System.Drawing.Size(36, 61);
+            this.MoveSelectedButton.Text = "Move Selected";
+            this.MoveSelectedButton.Click += new System.EventHandler(this.MoveSelectedButton_Click);
             // 
             // MainForm
             // 
@@ -400,6 +412,7 @@
         private System.Windows.Forms.ToolStripButton labelBoxButton;
         private System.Windows.Forms.ToolStripButton SetBackgroundBtn;
         private System.Windows.Forms.ToolStripButton ExportPNG;
+        private System.Windows.Forms.ToolStripButton MoveSelectedButton;
     }
 }
 
