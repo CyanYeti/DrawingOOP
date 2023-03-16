@@ -39,6 +39,7 @@
             this.deleteButton = new System.Windows.Forms.ToolStripButton();
             this.undoButton = new System.Windows.Forms.ToolStripButton();
             this.redoButton = new System.Windows.Forms.ToolStripButton();
+            this.SetBackgroundBtn = new System.Windows.Forms.ToolStripButton();
             this.drawingToolStrip = new System.Windows.Forms.ToolStrip();
             this.pointerButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,7 +55,6 @@
             this.tree07Button = new System.Windows.Forms.ToolStripButton();
             this.lineButton = new System.Windows.Forms.ToolStripButton();
             this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -87,7 +87,7 @@
             this.deleteButton,
             this.undoButton,
             this.redoButton,
-            this.toolStripButton1});
+            this.SetBackgroundBtn});
             this.fileToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fileToolStrip.Name = "fileToolStrip";
             this.fileToolStrip.Size = new System.Drawing.Size(914, 64);
@@ -156,6 +156,16 @@
             this.redoButton.Size = new System.Drawing.Size(36, 61);
             this.redoButton.Text = "Redo";
             this.redoButton.Click += new System.EventHandler(this.redoButton_Click);
+            // 
+            // SetBackgroundBtn
+            // 
+            this.SetBackgroundBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SetBackgroundBtn.Image = ((System.Drawing.Image)(resources.GetObject("SetBackgroundBtn.Image")));
+            this.SetBackgroundBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SetBackgroundBtn.Name = "SetBackgroundBtn";
+            this.SetBackgroundBtn.Size = new System.Drawing.Size(36, 61);
+            this.SetBackgroundBtn.Text = "Set Background";
+            this.SetBackgroundBtn.Click += new System.EventHandler(this.SetBackgroundBtn_Click);
             // 
             // drawingToolStrip
             // 
@@ -327,15 +337,6 @@
             this.labelBoxButton.Text = "Label Box";
             this.labelBoxButton.Click += new System.EventHandler(this.labelBoxButton_Click);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 61);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,7 +386,7 @@
         private System.Windows.Forms.ToolStripButton redoButton;
         private System.Windows.Forms.ToolStripButton lineButton;
         private System.Windows.Forms.ToolStripButton labelBoxButton;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton SetBackgroundBtn;
     }
 }
 

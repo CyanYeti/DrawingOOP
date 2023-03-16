@@ -97,8 +97,9 @@ namespace AppLayer.Command
                 case "SAVE":
                     command = new SaveCommand(commandParameters);
                     break;
-                case "CHANGEBACKGROUND":
-                    command = new ChangeBackgroundCommand(commandParameters);
+                //1234 command factory
+                case "SETBACKGROUND":
+                    command = new SetBackgroundCommand(commandParameters);
                     break;
             }
 

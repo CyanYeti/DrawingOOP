@@ -238,6 +238,8 @@ namespace Forests
             _forceRedraw = true;
         }
 
+
+
         private void deleteButton_Click(object sender, EventArgs e)
         {
             CommandFactory.Instance.CreateAndDo("remove");
@@ -266,6 +268,20 @@ namespace Forests
         private void labelBoxButton_Click(object sender, EventArgs e)
         {
             _mode = PossibleModes.BoxDrawing;
+        }
+        //1234
+        private void SetBackgroundBtn_Click(object sender, EventArgs e)
+        {
+            Bitmap backgroundMap = null;
+            using (BackgroundSelect backgroundSelect = new BackgroundSelect())
+            {
+                var map = backgroundSelect.ShowDialog();
+                if (map == DialogResult.OK)
+                {
+                    backgroundMap = backgroundSelect.BackgroundMap;
+                    CommandFactory.Instance.CreateAndDo("setbackground", backgroundMap);
+                }
+            }
         }
 
         private void drawingPanel_MouseDown(object sender, MouseEventArgs e)
@@ -338,5 +354,6 @@ namespace Forests
                         drawingPanel.ClientRectangle.Top + location.Y));
             return p4;
         }
+
     }
 }

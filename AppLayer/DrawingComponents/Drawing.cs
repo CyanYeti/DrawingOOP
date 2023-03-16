@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -15,7 +16,7 @@ namespace AppLayer.DrawingComponents
                 new DataContractJsonSerializer(typeof(List<Element>), new [] { typeof(Element), typeof(Tree), typeof(TreeWithAllState), typeof(TreeExtrinsicState), typeof(LabeledBox), typeof(Line) });
 
         private readonly List<Element> _elements = new List<Element>();
-        private readonly Background _background = new Background();
+        private Bitmap _background;
         private readonly object _myLock = new object();
 
         public bool IsDirty { get; set; } = true;
@@ -139,6 +140,11 @@ namespace AppLayer.DrawingComponents
                 if (!IsDirty && !redrawEvenIfNotDirty) return false;
 
                 graphics.Clear(Color.White);
+                if (_background != null ) {
+                    Console.WriteLine("Should be setting BG");
+                    Console.WriteLine(_background.ToString());
+                    graphics.DrawImage(_background, new Point(0, 0));
+                }
                 foreach (var t in _elements)
                     t.Draw(graphics);
                 IsDirty = false;
@@ -146,12 +152,16 @@ namespace AppLayer.DrawingComponents
             return true;
         }
 
-        public bool SetBackground(Background background)
+        public bool SetBackground(Bitmap background)
         {
+            if (background == null) return false;
             lock (_myLock)
             {
-                _background = background.GetBackground() as Color;
+                Console.WriteLine("Set Backgound", background.ToString());
+                _background = background;
+                IsDirty= true;
             }
+            return true;
         }
 
     }

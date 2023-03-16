@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackgroundSelect.Designer.cs">
+      <DependentUpon>BackgroundSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabelBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BackgroundSelect.resx">
+      <DependentUpon>BackgroundSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LabelBoxForm.resx">
       <DependentUpon>LabelBoxForm.cs</DependentUpon>
     </EmbeddedResource>

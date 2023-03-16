@@ -41,3 +41,9 @@ N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - 
 N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.csproj.CoreCompileInputs.cache
 N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.dll
 N:\OOP\Assign 3\forest-drawing\With Decorated Flyweight\Forests - Variation 5 - More Drawing Tools and Adapter\AppLayer\obj\Debug\AppLayer.pdb
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\obj\Debug\AppLayer.csproj.AssemblyReference.cache
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\obj\Debug\AppLayer.csproj.CoreCompileInputs.cache
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\obj\Debug\AppLayer.dll
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\obj\Debug\AppLayer.pdb
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\bin\Debug\AppLayer.dll
+C:\Users\3tfer\Documents\usu Software\OOP\Assign 3\DrawingOOP\AppLayer\bin\Debug\AppLayer.pdb
