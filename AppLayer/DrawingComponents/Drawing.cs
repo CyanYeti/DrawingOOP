@@ -140,6 +140,24 @@ namespace AppLayer.DrawingComponents
             }
         }
 
+        public List<Element> GetAllSelected()
+        {
+            var selectedList = new List<Element>();
+            lock (_myLock)
+            {
+                selectedList.AddRange(_elements.Select(element => { 
+                        if (element.IsSelected)
+                        {
+                            return element;
+                        }
+                        return null;
+                    }
+                ));
+            }
+
+            return selectedList;
+        }
+
         public Element FindElementAtPosition(Point point)
         {
             Element result;

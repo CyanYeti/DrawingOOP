@@ -111,6 +111,9 @@ namespace AppLayer.Command
                 case "CLONE":
                     command = new CloneCommand(commandParameters);
                     break;
+                case "SCALE":
+                    command = new ScaleCommand(commandParameters);
+                    break;
             }
 
             if (command != null)

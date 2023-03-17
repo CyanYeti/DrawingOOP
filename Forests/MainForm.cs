@@ -394,7 +394,7 @@ namespace Forests
             }
             else
             {
-                CommandFactory.Instance.CreateAndDo("deselect"); // Im not sure we need this for move
+                CommandFactory.Instance.CreateAndDo("deselect");
                 _mode = PossibleModes.None;
             }
         }
@@ -412,9 +412,30 @@ namespace Forests
             else
             {
                 Console.WriteLine("Deselected");
-                CommandFactory.Instance.CreateAndDo("deselect"); // Im not sure we need this for move
+                CommandFactory.Instance.CreateAndDo("deselect");
                 _mode = PossibleModes.None;
             }
+        }
+
+        private void ScaleBtn_Click(object sender, EventArgs e)
+        {
+            var button = sender as ToolStripButton;
+            ClearOtherSelectedTools(button);
+
+            Console.WriteLine(_currentScale.ToString());
+            CommandFactory.Instance.CreateAndDo("scale", _currentScale);
+
+            //if (button != null && button.Checked)
+            //{
+                
+            //    //_currentTreeResource = string.Empty;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Deselected");
+            //    CommandFactory.Instance.CreateAndDo("deselect");
+            //    _mode = PossibleModes.None;
+            //}
         }
     }
 }

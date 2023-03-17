@@ -10,6 +10,7 @@ namespace AppLayer.Command
 {
     internal class CloneCommand : Command
     {
+        // TODO: Look at cloning and moving when multiple elements selected
         private Point cloneSpot { get; set; }
         private Element clone;
         public CloneCommand(params object[] commandParameters) 

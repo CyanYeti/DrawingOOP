@@ -19,5 +19,11 @@ namespace AppLayer.DrawingComponents
         {
             return Location;
         }
+        public override bool SetScale(float scale)
+        {
+            if (Size == null) return false;
+            Size = new Size(new Point((int)(Size.Width * scale), (int)(Size.Height * scale)));
+            return true;
+        }
     }
 }

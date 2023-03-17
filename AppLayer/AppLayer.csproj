@@ -48,6 +48,7 @@
     <Compile Include="Command\CloneCommand.cs" />
     <Compile Include="Command\ExportCommand.cs" />
     <Compile Include="Command\MoveCommand.cs" />
+    <Compile Include="Command\ScaleCommand.cs" />
     <Compile Include="Command\SetBackgroundCommand.cs" />
     <Compile Include="Command\Command.cs" />
     <Compile Include="Command\AddTreeCommand.cs" />

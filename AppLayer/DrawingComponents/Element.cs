@@ -16,6 +16,7 @@ namespace AppLayer.DrawingComponents
         public virtual bool ContainsPoint(Point point) { return false; }
         public virtual bool MoveToPoint (Point point) { return false; }
         public virtual Point getLocation () { return Point.Empty; }
+        public virtual bool SetScale (float scale) { return false; }
 
     }
 }

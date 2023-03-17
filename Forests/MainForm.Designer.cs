@@ -58,6 +58,7 @@
             this.lineButton = new System.Windows.Forms.ToolStripButton();
             this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
             this.CloneElementBtn = new System.Windows.Forms.ToolStripButton();
+            this.ScaleBtn = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,7 @@
             this.drawingPanel.BackColor = System.Drawing.Color.White;
             this.drawingPanel.Location = new System.Drawing.Point(96, 67);
             this.drawingPanel.Name = "drawingPanel";
-            this.drawingPanel.Size = new System.Drawing.Size(818, 672);
+            this.drawingPanel.Size = new System.Drawing.Size(981, 878);
             this.drawingPanel.TabIndex = 1;
             this.drawingPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseDown);
             this.drawingPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseMove);
@@ -94,7 +95,7 @@
             this.SetBackgroundBtn});
             this.fileToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fileToolStrip.Name = "fileToolStrip";
-            this.fileToolStrip.Size = new System.Drawing.Size(914, 64);
+            this.fileToolStrip.Size = new System.Drawing.Size(1077, 64);
             this.fileToolStrip.TabIndex = 2;
             this.fileToolStrip.Text = "toolStrip1";
             // 
@@ -192,6 +193,7 @@
             this.MoveSelectedButton,
             this.CloneElementBtn,
             this.toolStripSeparator2,
+            this.ScaleBtn,
             this.scaleLabel,
             this.scale,
             this.toolStripSeparator1,
@@ -207,7 +209,7 @@
             this.drawingToolStrip.Location = new System.Drawing.Point(0, 64);
             this.drawingToolStrip.Name = "drawingToolStrip";
             this.drawingToolStrip.Padding = new System.Windows.Forms.Padding(0, 8, 1, 0);
-            this.drawingToolStrip.Size = new System.Drawing.Size(93, 712);
+            this.drawingToolStrip.Size = new System.Drawing.Size(93, 881);
             this.drawingToolStrip.TabIndex = 3;
             this.drawingToolStrip.Text = "Tools";
             // 
@@ -338,7 +340,7 @@
             this.tree07Button.Image = ((System.Drawing.Image)(resources.GetObject("tree07Button.Image")));
             this.tree07Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tree07Button.Name = "tree07Button";
-            this.tree07Button.Size = new System.Drawing.Size(68, 68);
+            this.tree07Button.Size = new System.Drawing.Size(90, 68);
             this.tree07Button.Text = "Tree-07";
             this.tree07Button.Click += new System.EventHandler(this.treeButton_Click);
             // 
@@ -375,12 +377,22 @@
             this.CloneElementBtn.Text = "Clone Element";
             this.CloneElementBtn.Click += new System.EventHandler(this.CloneElementBtn_Click);
             // 
+            // ScaleBtn
+            // 
+            this.ScaleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ScaleBtn.Image = ((System.Drawing.Image)(resources.GetObject("ScaleBtn.Image")));
+            this.ScaleBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ScaleBtn.Name = "ScaleBtn";
+            this.ScaleBtn.Size = new System.Drawing.Size(90, 68);
+            this.ScaleBtn.Text = "Resize (Scale)";
+            this.ScaleBtn.Click += new System.EventHandler(this.ScaleBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(914, 776);
+            this.ClientSize = new System.Drawing.Size(1077, 945);
             this.Controls.Add(this.drawingToolStrip);
             this.Controls.Add(this.fileToolStrip);
             this.Controls.Add(this.drawingPanel);
@@ -428,6 +440,7 @@
         private System.Windows.Forms.ToolStripButton ExportPNG;
         private System.Windows.Forms.ToolStripButton MoveSelectedButton;
         private System.Windows.Forms.ToolStripButton CloneElementBtn;
+        private System.Windows.Forms.ToolStripButton ScaleBtn;
     }
 }
 
