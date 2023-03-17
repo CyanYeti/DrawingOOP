@@ -43,6 +43,7 @@
             this.SetBackgroundBtn = new System.Windows.Forms.ToolStripButton();
             this.drawingToolStrip = new System.Windows.Forms.ToolStrip();
             this.pointerButton = new System.Windows.Forms.ToolStripButton();
+            this.MoveSelectedButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.scaleLabel = new System.Windows.Forms.ToolStripLabel();
             this.scale = new System.Windows.Forms.ToolStripTextBox();
@@ -56,7 +57,7 @@
             this.tree07Button = new System.Windows.Forms.ToolStripButton();
             this.lineButton = new System.Windows.Forms.ToolStripButton();
             this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
-            this.MoveSelectedButton = new System.Windows.Forms.ToolStripButton();
+            this.CloneElementBtn = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -189,6 +190,7 @@
             this.drawingToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pointerButton,
             this.MoveSelectedButton,
+            this.CloneElementBtn,
             this.toolStripSeparator2,
             this.scaleLabel,
             this.scale,
@@ -220,6 +222,17 @@
             this.pointerButton.Size = new System.Drawing.Size(61, 50);
             this.pointerButton.Text = "pointerButton";
             this.pointerButton.Click += new System.EventHandler(this.pointerButton_Click);
+            // 
+            // MoveSelectedButton
+            // 
+            this.MoveSelectedButton.CheckOnClick = true;
+            this.MoveSelectedButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MoveSelectedButton.Image = ((System.Drawing.Image)(resources.GetObject("MoveSelectedButton.Image")));
+            this.MoveSelectedButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MoveSelectedButton.Name = "MoveSelectedButton";
+            this.MoveSelectedButton.Size = new System.Drawing.Size(90, 68);
+            this.MoveSelectedButton.Text = "Move Selection";
+            this.MoveSelectedButton.Click += new System.EventHandler(this.MoveSelectedButton_Click);
             // 
             // toolStripSeparator2
             // 
@@ -325,7 +338,7 @@
             this.tree07Button.Image = ((System.Drawing.Image)(resources.GetObject("tree07Button.Image")));
             this.tree07Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tree07Button.Name = "tree07Button";
-            this.tree07Button.Size = new System.Drawing.Size(90, 68);
+            this.tree07Button.Size = new System.Drawing.Size(68, 68);
             this.tree07Button.Text = "Tree-07";
             this.tree07Button.Click += new System.EventHandler(this.treeButton_Click);
             // 
@@ -351,16 +364,16 @@
             this.labelBoxButton.Text = "Label Box";
             this.labelBoxButton.Click += new System.EventHandler(this.labelBoxButton_Click);
             // 
-            // MoveSelectedButton
+            // CloneElementBtn
             // 
-            this.MoveSelectedButton.CheckOnClick = true;
-            this.MoveSelectedButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MoveSelectedButton.Image = ((System.Drawing.Image)(resources.GetObject("MoveSelectedButton.Image")));
-            this.MoveSelectedButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MoveSelectedButton.Name = "MoveSelectedButton";
-            this.MoveSelectedButton.Size = new System.Drawing.Size(90, 68);
-            this.MoveSelectedButton.Text = "Move Selection";
-            this.MoveSelectedButton.Click += new System.EventHandler(this.MoveSelectedButton_Click);
+            this.CloneElementBtn.CheckOnClick = true;
+            this.CloneElementBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CloneElementBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloneElementBtn.Image")));
+            this.CloneElementBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CloneElementBtn.Name = "CloneElementBtn";
+            this.CloneElementBtn.Size = new System.Drawing.Size(90, 68);
+            this.CloneElementBtn.Text = "Clone Element";
+            this.CloneElementBtn.Click += new System.EventHandler(this.CloneElementBtn_Click);
             // 
             // MainForm
             // 
@@ -414,6 +427,7 @@
         private System.Windows.Forms.ToolStripButton SetBackgroundBtn;
         private System.Windows.Forms.ToolStripButton ExportPNG;
         private System.Windows.Forms.ToolStripButton MoveSelectedButton;
+        private System.Windows.Forms.ToolStripButton CloneElementBtn;
     }
 }
 

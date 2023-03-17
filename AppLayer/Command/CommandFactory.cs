@@ -108,6 +108,9 @@ namespace AppLayer.Command
                 case "MOVE":
                     command = new MoveCommand(commandParameters);
                     break;
+                case "CLONE":
+                    command = new CloneCommand(commandParameters);
+                    break;
             }
 
             if (command != null)

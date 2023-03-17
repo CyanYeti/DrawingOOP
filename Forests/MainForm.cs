@@ -32,7 +32,8 @@ namespace Forests
             LineDrawing,
             BoxDrawing,
             Selection,
-            Moving
+            Moving,
+            Clone
         };
 
         private PossibleModes _mode = PossibleModes.None;
@@ -166,6 +167,9 @@ namespace Forests
                     break;
                 case PossibleModes.Moving:
                     CommandFactory.Instance.CreateAndDo("move", e.Location);
+                    break;
+                case PossibleModes.Clone:
+                    CommandFactory.Instance.CreateAndDo("clone", e.Location);
                     break;
             }
 
@@ -386,6 +390,23 @@ namespace Forests
             if (button != null && button.Checked)
             {
                 _mode = PossibleModes.Moving;
+                //_currentTreeResource = string.Empty;
+            }
+            else
+            {
+                CommandFactory.Instance.CreateAndDo("deselect"); // Im not sure we need this for move
+                _mode = PossibleModes.None;
+            }
+        }
+
+        private void CloneElementBtn_Click(object sender, EventArgs e)
+        {
+            var button = sender as ToolStripButton;
+            ClearOtherSelectedTools(button);
+
+            if (button != null && button.Checked)
+            {
+                _mode = PossibleModes.Clone;
                 //_currentTreeResource = string.Empty;
             }
             else

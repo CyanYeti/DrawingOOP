@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Command\AddBoxCommand.cs" />
     <Compile Include="Command\AddLineCommand.cs" />
+    <Compile Include="Command\CloneCommand.cs" />
     <Compile Include="Command\ExportCommand.cs" />
     <Compile Include="Command\MoveCommand.cs" />
     <Compile Include="Command\SetBackgroundCommand.cs" />
