@@ -1,4 +1,4 @@
-﻿namespace Forests
+﻿namespace Birds
 {
     partial class LabelBoxForm
     {

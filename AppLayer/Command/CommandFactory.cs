@@ -1,4 +1,5 @@
 ﻿using AppLayer.DrawingComponents;
+using System;
 
 namespace AppLayer.Command
 {
@@ -13,7 +14,7 @@ namespace AppLayer.Command
         private static CommandFactory _instance;
         private static readonly object MyLock = new object();
         private CommandFactory() { }
-
+        // Trey: Command factory is a singleton handled by this instance
         public static CommandFactory Instance
         {
             get
@@ -37,7 +38,7 @@ namespace AppLayer.Command
         /// </summary>
         /// <param name="commandType">type of command to Create:
         ///             New
-        ///             AddTree
+        ///             AddBird
         ///             AddLine
         ///             AddDraw
         ///             Remove
@@ -48,19 +49,20 @@ namespace AppLayer.Command
         /// <param name="commandParameters">An array of optional parametesr whose sementics depedent on the command type
         ///     For new, no additional parameters needed
         ///     For add, 
-        ///         [0]: Type       reference type for assembly containing the tree type resource
-        ///         [1]: string     tree type -- a fully qualified resource name
-        ///         [2]: Point      center location for the tree, defaut = top left corner
+        ///         [0]: Type       reference type for assembly containing the bird type resource
+        ///         [1]: string     bird type -- a fully qualified resource name
+        ///         [2]: Point      center location for the bird, defaut = top left corner
         ///         [3]: float      scale factor</param>
         ///     For remove, no additional parameters needed
         ///     For select,
-        ///         [0]: Point      Location at which a tree could be selected
+        ///         [0]: Point      Location at which a bird could be selected
         ///     For deselect, no additional parameters needed
         ///     For load,
         ///         [0]: string     filename of file to load from  
         ///     For save,
         ///         [0]: string     filename of file to save to  
         /// <returns></returns>
+        // Trey: here is the command factory that creates the commands and passes them on to the invoker to be run
         public virtual void CreateAndDo(string commandType, params object[] commandParameters)
         {
             if (string.IsNullOrWhiteSpace(commandType)) return;
@@ -73,8 +75,8 @@ namespace AppLayer.Command
                 case "NEW":
                     command = new NewCommand();
                     break;
-                case "ADDTREE":
-                    command = new AddTreeCommand(commandParameters);
+                case "ADDBIRD":
+                    command = new AddBirdCommand(commandParameters);
                     break;
                 case "ADDBOX":
                     command = new AddBoxCommand(commandParameters);
@@ -97,11 +99,10 @@ namespace AppLayer.Command
                 case "SAVE":
                     command = new SaveCommand(commandParameters);
                     break;
-                //1234 command factory
+                // Commands that are added, very simple add new commands once set up
                 case "SETBACKGROUND":
                     command = new SetBackgroundCommand(commandParameters);
                     break;
-                //1234
                 case "EXPORT":
                     command = new ExportCommand(commandParameters);
                     break;

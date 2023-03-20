@@ -42,7 +42,6 @@ namespace AppLayer.Command
 
         internal override void Redo()
         {
-            Console.WriteLine("REDO");
             TargetDrawing.DeleteElement(selected);
             selected.MoveToPoint(moveTo);
             TargetDrawing.Add(selected);
@@ -50,7 +49,6 @@ namespace AppLayer.Command
 
         internal override void Undo()
         {
-            Console.WriteLine("UNDO");
             TargetDrawing.DeleteElement(selected);
             selected.MoveToPoint(moveFrom);
             TargetDrawing.Add(selected);

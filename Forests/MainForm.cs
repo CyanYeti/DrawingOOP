@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using AppLayer.Command;
 using AppLayer.DrawingComponents;
 
-namespace Forests
+namespace Birds
 {
     // NOTE: There some design problems with this class
 
@@ -15,7 +15,7 @@ namespace Forests
         private readonly Drawing _drawing;
         private bool _forceRedraw;
         private readonly Invoker _invoker;
-        private string _currentTreeResource;
+        private string _currentBirdResource;
         private float _currentScale = 1;
         private bool _showRubberBand;
         private bool _eraseLastRubberBand;
@@ -28,7 +28,7 @@ namespace Forests
         private enum PossibleModes
         {
             None,
-            TreeDrawing,
+            BirdDrawing,
             LineDrawing,
             BoxDrawing,
             Selection,
@@ -46,8 +46,8 @@ namespace Forests
         {
             InitializeComponent();
 
-            TreeFactory.Instance.ResourceNamePattern = @"Forests.Graphics.{0}.png";
-            TreeFactory.Instance.ReferenceType = typeof(Program);
+            BirdFactory.Instance.ResourceNamePattern = @"Birds.Graphics.{0}.png";
+            BirdFactory.Instance.ReferenceType = typeof(Program);
 
             _drawing = new Drawing();
             _invoker = new Invoker();
@@ -85,8 +85,8 @@ namespace Forests
 
         private void newButton_Click(object sender, EventArgs e)
         {
-            CommandFactory.Instance.CreateAndDo("new"); // TODO check that we are clearing everything correctly
-            SetBackgroundBtn_Click(sender, e); //1234: requirement 1
+            CommandFactory.Instance.CreateAndDo("new"); // Clear backgrounds and elements
+            this.SetBackgroundBtn.PerformClick(); //Trey: Here is requirement 1, calls the set background on new, I also added a set background button to do it any time
         }
 
         private void ClearOtherSelectedTools(ToolStripButton ignoreItem)
@@ -107,7 +107,7 @@ namespace Forests
             if (button!=null && button.Checked)
             {
                 _mode = PossibleModes.Selection;
-                _currentTreeResource = string.Empty;
+                _currentBirdResource = string.Empty;
             }
             else
             {
@@ -116,18 +116,18 @@ namespace Forests
             }
         }
 
-        private void treeButton_Click(object sender, EventArgs e)
+        private void BirdButton_Click(object sender, EventArgs e)
         {
             var button = sender as ToolStripButton;
             ClearOtherSelectedTools(button);
 
             if (button != null && button.Checked)
-                _currentTreeResource = button.Text;
+                _currentBirdResource = button.Text;
             else
-                _currentTreeResource = string.Empty;
+                _currentBirdResource = string.Empty;
 
             CommandFactory.Instance.CreateAndDo("deselect");
-            _mode = (_currentTreeResource != string.Empty) ? PossibleModes.TreeDrawing : PossibleModes.None;
+            _mode = (_currentBirdResource != string.Empty) ? PossibleModes.BirdDrawing : PossibleModes.None;
         }
 
         private void drawingPanel_MouseUp(object sender, MouseEventArgs e)
@@ -158,9 +158,9 @@ namespace Forests
                 case PossibleModes.LineDrawing:
                     CommandFactory.Instance.CreateAndDo("addline", _startingPoint, e.Location);
                     break;
-                case PossibleModes.TreeDrawing:
-                    if (!string.IsNullOrWhiteSpace(_currentTreeResource))
-                        CommandFactory.Instance.CreateAndDo("addtree", _currentTreeResource, e.Location, _currentScale);
+                case PossibleModes.BirdDrawing:
+                    if (!string.IsNullOrWhiteSpace(_currentBirdResource))
+                        CommandFactory.Instance.CreateAndDo("addBird", _currentBirdResource, e.Location, _currentScale);
                     break;
                 case PossibleModes.Selection:
                     CommandFactory.Instance.CreateAndDo("select", e.Location);
@@ -279,7 +279,7 @@ namespace Forests
         {
             _mode = PossibleModes.BoxDrawing;
         }
-        //1234
+        // Setting the background
         private void SetBackgroundBtn_Click(object sender, EventArgs e)
         {
             Bitmap backgroundMap = null;
@@ -390,7 +390,6 @@ namespace Forests
             if (button != null && button.Checked)
             {
                 _mode = PossibleModes.Moving;
-                //_currentTreeResource = string.Empty;
             }
             else
             {
@@ -407,11 +406,9 @@ namespace Forests
             if (button != null && button.Checked)
             {
                 _mode = PossibleModes.Clone;
-                //_currentTreeResource = string.Empty;
             }
             else
             {
-                Console.WriteLine("Deselected");
                 CommandFactory.Instance.CreateAndDo("deselect");
                 _mode = PossibleModes.None;
             }
@@ -420,22 +417,55 @@ namespace Forests
         private void ScaleBtn_Click(object sender, EventArgs e)
         {
             var button = sender as ToolStripButton;
-            ClearOtherSelectedTools(button);
 
-            Console.WriteLine(_currentScale.ToString());
             CommandFactory.Instance.CreateAndDo("scale", _currentScale);
 
-            //if (button != null && button.Checked)
-            //{
-                
-            //    //_currentTreeResource = string.Empty;
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Deselected");
-            //    CommandFactory.Instance.CreateAndDo("deselect");
-            //    _mode = PossibleModes.None;
-            //}
         }
+        // Trey: Requirement 4 key bindings
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (this.scale.Focused) return false; // If we are on text box, take in data instead
+            switch (keyData)
+            {
+                case Keys.S:
+                    this.pointerButton.PerformClick();
+                    break;
+                case Keys.C:
+                    this.CloneElementBtn.PerformClick();
+                    break;
+                case Keys.M:
+                    this.MoveSelectedButton.PerformClick();
+                    break;
+                case Keys.F:
+                    this.ScaleBtn.PerformClick();
+                    break;
+                case Keys.N:
+                    this.newButton.PerformClick();
+                    break;
+                case Keys.O:
+                    this.openButton.PerformClick();
+                    break;
+                case Keys.P:
+                    this.saveButton.PerformClick();
+                    break;
+                case Keys.E:
+                    this.ExportPNG.PerformClick();
+                    break;
+                case Keys.D:
+                    this.deleteButton.PerformClick();
+                    break;
+                case Keys.U:
+                    this.undoButton.PerformClick();
+                    break;
+                case Keys.R:
+                    this.redoButton.PerformClick();
+                    break;
+                case Keys.B:
+                    this.SetBackgroundBtn.PerformClick();
+                    break;
+            }
+            return true;
+        }
+
     }
 }

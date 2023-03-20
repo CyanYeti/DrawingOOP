@@ -10,7 +10,7 @@ namespace AppLayer.Command
             if (commandParameters.Length > 0)
                 _filename = commandParameters[0] as string;
         }
-        // TODO This is missing background
+        
         public override bool Execute()
         {
             StreamWriter writer = new StreamWriter(_filename);

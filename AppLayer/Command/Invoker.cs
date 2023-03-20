@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -21,7 +22,7 @@ namespace AppLayer.Command
 
         private readonly Stack<Command> _undoStack = new Stack<Command>();
         private readonly Stack<Command> _redoStack = new Stack<Command>();
-
+        // Trey: The invoker handles the command running and track the cmds to undo and redo
         public void Start()
         {
             _keepGoing = true;
@@ -67,7 +68,9 @@ namespace AppLayer.Command
                     else
                     {
                         if (cmd.Execute())
+                        {
                             _undoStack.Push(cmd);
+                        }
                     }
                 }
                 else

@@ -1,0 +1,17 @@
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\AppLayer.dll
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\AppLayer.pdb
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.csproj.AssemblyReference.cache
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.csproj.SuggestedBindingRedirects.cache
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.csproj.GenerateResource.cache
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.csproj.CoreCompileInputs.cache
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.csproj.CopyComplete
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.MainForm.resources
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.BackgroundSelect.resources
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.LabelBoxForm.resources
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\Graphics\bird.png
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\Birds.exe.config
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\Birds.exe
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\bin\Debug\Birds.pdb
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.Properties.Resources.resources
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.exe
+N:\OOP\Assign 3\GitReal\DrawingOOP\Forests\obj\Debug\Birds.pdb

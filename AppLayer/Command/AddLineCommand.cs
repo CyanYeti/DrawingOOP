@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using AppLayer.DrawingComponents;
 
 namespace AppLayer.Command
@@ -25,6 +26,7 @@ namespace AppLayer.Command
 
             if (commandParameters.Length > 1)
                 _end = (Point) commandParameters[1];
+
         }
 
         public override bool Execute()

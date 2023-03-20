@@ -9,9 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Forests
+namespace Birds
 {
-    //1234
     public partial class BackgroundSelect : Form
     {
         private string ImagePath;
@@ -52,7 +51,7 @@ namespace Forests
         }
 
 
-        //1234 this is a strategy pattern kind of
+        // Trey: Here is a simple strategy pattern to process either type of input (color or png) into a bitmap
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (this.imagePath.Text != "" && this.ColorSelect.SelectedItems.Count > 0) return;

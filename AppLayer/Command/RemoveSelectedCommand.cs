@@ -26,8 +26,8 @@ namespace AppLayer.Command
         {
             if (_deletedElements == null || _deletedElements.Count == 0) return;
 
-            foreach (var tree in _deletedElements)
-                TargetDrawing?.DeleteElement(tree);
+            foreach (var bird in _deletedElements)
+                TargetDrawing?.DeleteElement(bird);
         }
     }
 }

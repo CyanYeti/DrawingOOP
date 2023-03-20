@@ -24,6 +24,7 @@ namespace AppLayer.Command
             List<Element> oldSet = TargetDrawing.GetAllSelected();
             foreach (Element element in oldSet)
             {
+                if (element == null) continue;
                 TargetDrawing.DeleteElement(element);
                 elementsOld.Add(element.Clone());
                 Element temp = element.Clone();

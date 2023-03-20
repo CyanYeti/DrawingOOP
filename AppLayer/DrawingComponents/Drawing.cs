@@ -9,12 +9,12 @@ using System.Text;
 
 namespace AppLayer.DrawingComponents
 {
-    // NOTE: This class at least one  problem that is hurting coupling and cohesion
+    
 
     public class Drawing
     {
         private static readonly DataContractJsonSerializer JsonSerializer =
-                new DataContractJsonSerializer(typeof(List<Element>), new [] { typeof(Element), typeof(Tree), typeof(TreeWithAllState), typeof(TreeExtrinsicState), typeof(LabeledBox), typeof(Line) });
+                new DataContractJsonSerializer(typeof(List<Element>), new [] { typeof(Element), typeof(Bird), typeof(BirdWithAllState), typeof(BirdExtrinsicState), typeof(LabeledBox), typeof(Line) });
         private static readonly DataContractJsonSerializer JsonSerializerBackground =
                 new DataContractJsonSerializer(typeof(List<Background>), new[] { typeof(Background) });
 
@@ -34,12 +34,24 @@ namespace AppLayer.DrawingComponents
 
             return cloneList;           
         }
+        public List<Background> GetBackgrounds()
+        {
+            var list = new List<Background>();
+            lock (_myLock)
+            {
+                list.AddRange(_backgrounds.Select(background => background));
+            }
+
+            return list;
+        }
+
 
         public void Clear()
         {
             lock (_myLock)
             {
                 _elements.Clear();
+                _backgrounds.Clear();
                 IsDirty = true;
             }
         }
@@ -66,13 +78,13 @@ namespace AppLayer.DrawingComponents
 
             lock (_myLock)
             {
-                // Since only the extrinsic state is saved, recreate the full tree objects
+                // Since only the extrinsic state is saved, recreate the full bird objects
                 foreach (var element in loadedElements)
                 {
-                    var tmpTree = element as TreeWithAllState;
+                    var tmpTree = element as BirdWithAllState;
                     if (tmpTree != null)
                     {
-                        Tree fullTree = TreeFactory.Instance.GetTree(tmpTree.ExtrinsicState);
+                        Bird fullTree = BirdFactory.Instance.GetBird(tmpTree.ExtrinsicState);
                         _elements.Add(fullTree);
                     }
                     else
@@ -110,7 +122,6 @@ namespace AppLayer.DrawingComponents
         public void Add(Element element)
         {
             if (element == null) return;
-
             lock (_myLock)
             {
                 _elements.Add(element);
@@ -212,7 +223,7 @@ namespace AppLayer.DrawingComponents
         }
         public bool RemoveLastBackground()
         {
-            if (_backgrounds == null) return false;
+            if (_backgrounds == null || _backgrounds.Count == 0) return false;
             lock (_myLock)
             {
                 _backgrounds.RemoveAt(_backgrounds.Count - 1);
@@ -227,12 +238,6 @@ namespace AppLayer.DrawingComponents
                 if (element.IsSelected == true) return element;
             }
             return null;
-        }
-        public bool MoveSelected(Element selected, Point oldLocation, Point newLocation)
-        {
-            Element toChange = FindElementAtPosition(oldLocation);
-            
-            return true;
         }
 
     }

@@ -10,8 +10,7 @@ using System.Threading.Tasks;
 namespace AppLayer.DrawingComponents
 {
     [DataContract]
-    public class Background //TODO make setbackground command store previous background instead of drawing, lower cohesion?
-        //TODO We should really save the undo and redo stacks for the next drawing
+    public class Background
     {
         public Bitmap map { get; set; }
         [DataMember]

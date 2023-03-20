@@ -11,7 +11,6 @@ namespace AppLayer.Command
     internal class SetBackgroundCommand : Command
     {
         private Background background;
-
         internal SetBackgroundCommand(params object[] commandParameters)
         {
             if (commandParameters.Length > 0)

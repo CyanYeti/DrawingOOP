@@ -11,7 +11,7 @@ namespace AppLayer.Command
 {
     internal class ExportCommand : Command
     {
-        //1234 Image save to png requirement 7
+        //Trey: Image save to png requirement 7
         private string fileName;
         private Bitmap image;
         internal ExportCommand(params object[] commandParameters)
@@ -25,7 +25,6 @@ namespace AppLayer.Command
                 image = commandParameters[1] as Bitmap;
             }
         }
-        //1234 There is no reason to call TargetDrawing, since that 
         public override bool Execute()
         {
             image.Save(fileName, ImageFormat.Png);

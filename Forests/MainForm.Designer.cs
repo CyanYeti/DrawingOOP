@@ -1,4 +1,4 @@
-﻿namespace Forests
+﻿namespace Birds
 {
     partial class MainForm
     {
@@ -44,21 +44,20 @@
             this.drawingToolStrip = new System.Windows.Forms.ToolStrip();
             this.pointerButton = new System.Windows.Forms.ToolStripButton();
             this.MoveSelectedButton = new System.Windows.Forms.ToolStripButton();
+            this.CloneElementBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.ScaleBtn = new System.Windows.Forms.ToolStripButton();
             this.scaleLabel = new System.Windows.Forms.ToolStripLabel();
             this.scale = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tree01Button = new System.Windows.Forms.ToolStripButton();
-            this.tree02Button = new System.Windows.Forms.ToolStripButton();
-            this.tree03Button = new System.Windows.Forms.ToolStripButton();
-            this.tree04Button = new System.Windows.Forms.ToolStripButton();
-            this.tree05Button = new System.Windows.Forms.ToolStripButton();
-            this.tree06Button = new System.Windows.Forms.ToolStripButton();
-            this.tree07Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird01Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird02Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird03Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird04Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird05Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird06Button = new System.Windows.Forms.ToolStripButton();
+            this.Bird07Button = new System.Windows.Forms.ToolStripButton();
             this.lineButton = new System.Windows.Forms.ToolStripButton();
-            this.labelBoxButton = new System.Windows.Forms.ToolStripButton();
-            this.CloneElementBtn = new System.Windows.Forms.ToolStripButton();
-            this.ScaleBtn = new System.Windows.Forms.ToolStripButton();
             this.fileToolStrip.SuspendLayout();
             this.drawingToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +67,7 @@
             this.drawingPanel.BackColor = System.Drawing.Color.White;
             this.drawingPanel.Location = new System.Drawing.Point(96, 67);
             this.drawingPanel.Name = "drawingPanel";
-            this.drawingPanel.Size = new System.Drawing.Size(981, 878);
+            this.drawingPanel.Size = new System.Drawing.Size(979, 846);
             this.drawingPanel.TabIndex = 1;
             this.drawingPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseDown);
             this.drawingPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseMove);
@@ -81,7 +80,7 @@
             // fileToolStrip
             // 
             this.fileToolStrip.AutoSize = false;
-            this.fileToolStrip.BackColor = System.Drawing.Color.CadetBlue;
+            this.fileToolStrip.BackColor = System.Drawing.Color.Plum;
             this.fileToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fileToolStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.fileToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -95,7 +94,7 @@
             this.SetBackgroundBtn});
             this.fileToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fileToolStrip.Name = "fileToolStrip";
-            this.fileToolStrip.Size = new System.Drawing.Size(1077, 64);
+            this.fileToolStrip.Size = new System.Drawing.Size(1075, 64);
             this.fileToolStrip.TabIndex = 2;
             this.fileToolStrip.Text = "toolStrip1";
             // 
@@ -107,7 +106,7 @@
             this.newButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(61, 61);
-            this.newButton.Text = "New";
+            this.newButton.Text = "New (N)";
             this.newButton.Click += new System.EventHandler(this.newButton_Click);
             // 
             // openButton
@@ -118,7 +117,7 @@
             this.openButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(61, 61);
-            this.openButton.Text = "Open Drawing";
+            this.openButton.Text = "Open Drawing (O)";
             this.openButton.Click += new System.EventHandler(this.openButton_Click);
             // 
             // saveButton
@@ -129,7 +128,7 @@
             this.saveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(61, 61);
-            this.saveButton.Text = "Save Drawing";
+            this.saveButton.Text = "Save Drawing (P)";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // ExportPNG
@@ -139,7 +138,7 @@
             this.ExportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ExportPNG.Name = "ExportPNG";
             this.ExportPNG.Size = new System.Drawing.Size(36, 61);
-            this.ExportPNG.Text = "Export To PNG";
+            this.ExportPNG.Text = "Export To PNG (E)";
             this.ExportPNG.Click += new System.EventHandler(this.ExportPNG_Click);
             // 
             // deleteButton
@@ -149,7 +148,7 @@
             this.deleteButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(36, 61);
-            this.deleteButton.Text = "Delete";
+            this.deleteButton.Text = "Delete (D)";
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // undoButton
@@ -159,7 +158,7 @@
             this.undoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.undoButton.Name = "undoButton";
             this.undoButton.Size = new System.Drawing.Size(36, 61);
-            this.undoButton.Text = "Undo";
+            this.undoButton.Text = "Undo (U)";
             this.undoButton.Click += new System.EventHandler(this.undoButton_Click);
             // 
             // redoButton
@@ -169,7 +168,7 @@
             this.redoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.redoButton.Name = "redoButton";
             this.redoButton.Size = new System.Drawing.Size(36, 61);
-            this.redoButton.Text = "Redo";
+            this.redoButton.Text = "Redo (R)";
             this.redoButton.Click += new System.EventHandler(this.redoButton_Click);
             // 
             // SetBackgroundBtn
@@ -179,12 +178,12 @@
             this.SetBackgroundBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SetBackgroundBtn.Name = "SetBackgroundBtn";
             this.SetBackgroundBtn.Size = new System.Drawing.Size(36, 61);
-            this.SetBackgroundBtn.Text = "Set Background";
+            this.SetBackgroundBtn.Text = "Set Background (B)";
             this.SetBackgroundBtn.Click += new System.EventHandler(this.SetBackgroundBtn_Click);
             // 
             // drawingToolStrip
             // 
-            this.drawingToolStrip.BackColor = System.Drawing.Color.PowderBlue;
+            this.drawingToolStrip.BackColor = System.Drawing.Color.Thistle;
             this.drawingToolStrip.Dock = System.Windows.Forms.DockStyle.Left;
             this.drawingToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.drawingToolStrip.ImageScalingSize = new System.Drawing.Size(64, 64);
@@ -197,19 +196,18 @@
             this.scaleLabel,
             this.scale,
             this.toolStripSeparator1,
-            this.tree01Button,
-            this.tree02Button,
-            this.tree03Button,
-            this.tree04Button,
-            this.tree05Button,
-            this.tree06Button,
-            this.tree07Button,
-            this.lineButton,
-            this.labelBoxButton});
+            this.Bird01Button,
+            this.Bird02Button,
+            this.Bird03Button,
+            this.Bird04Button,
+            this.Bird05Button,
+            this.Bird06Button,
+            this.Bird07Button,
+            this.lineButton});
             this.drawingToolStrip.Location = new System.Drawing.Point(0, 64);
             this.drawingToolStrip.Name = "drawingToolStrip";
             this.drawingToolStrip.Padding = new System.Windows.Forms.Padding(0, 8, 1, 0);
-            this.drawingToolStrip.Size = new System.Drawing.Size(93, 881);
+            this.drawingToolStrip.Size = new System.Drawing.Size(93, 849);
             this.drawingToolStrip.TabIndex = 3;
             this.drawingToolStrip.Text = "Tools";
             // 
@@ -222,7 +220,7 @@
             this.pointerButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pointerButton.Name = "pointerButton";
             this.pointerButton.Size = new System.Drawing.Size(61, 50);
-            this.pointerButton.Text = "pointerButton";
+            this.pointerButton.Text = "pointerButton (S)";
             this.pointerButton.Click += new System.EventHandler(this.pointerButton_Click);
             // 
             // MoveSelectedButton
@@ -233,13 +231,34 @@
             this.MoveSelectedButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MoveSelectedButton.Name = "MoveSelectedButton";
             this.MoveSelectedButton.Size = new System.Drawing.Size(90, 68);
-            this.MoveSelectedButton.Text = "Move Selection";
+            this.MoveSelectedButton.Text = "Move Selection (M)";
             this.MoveSelectedButton.Click += new System.EventHandler(this.MoveSelectedButton_Click);
+            // 
+            // CloneElementBtn
+            // 
+            this.CloneElementBtn.CheckOnClick = true;
+            this.CloneElementBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CloneElementBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloneElementBtn.Image")));
+            this.CloneElementBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CloneElementBtn.Name = "CloneElementBtn";
+            this.CloneElementBtn.Size = new System.Drawing.Size(90, 68);
+            this.CloneElementBtn.Text = "Clone Element (C)";
+            this.CloneElementBtn.Click += new System.EventHandler(this.CloneElementBtn_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(90, 6);
+            // 
+            // ScaleBtn
+            // 
+            this.ScaleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ScaleBtn.Image = ((System.Drawing.Image)(resources.GetObject("ScaleBtn.Image")));
+            this.ScaleBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ScaleBtn.Name = "ScaleBtn";
+            this.ScaleBtn.Size = new System.Drawing.Size(90, 68);
+            this.ScaleBtn.Text = "Resize (F)";
+            this.ScaleBtn.Click += new System.EventHandler(this.ScaleBtn_Click);
             // 
             // scaleLabel
             // 
@@ -263,86 +282,86 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(90, 6);
             // 
-            // tree01Button
+            // Bird01Button
             // 
-            this.tree01Button.AutoSize = false;
-            this.tree01Button.CheckOnClick = true;
-            this.tree01Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree01Button.Image = ((System.Drawing.Image)(resources.GetObject("tree01Button.Image")));
-            this.tree01Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree01Button.Name = "tree01Button";
-            this.tree01Button.Size = new System.Drawing.Size(61, 61);
-            this.tree01Button.Text = "Tree-01";
-            this.tree01Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird01Button.AutoSize = false;
+            this.Bird01Button.CheckOnClick = true;
+            this.Bird01Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird01Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird01Button.Image")));
+            this.Bird01Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird01Button.Name = "Bird01Button";
+            this.Bird01Button.Size = new System.Drawing.Size(61, 61);
+            this.Bird01Button.Text = "bird";
+            this.Bird01Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree02Button
+            // Bird02Button
             // 
-            this.tree02Button.AutoSize = false;
-            this.tree02Button.CheckOnClick = true;
-            this.tree02Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree02Button.Image = ((System.Drawing.Image)(resources.GetObject("tree02Button.Image")));
-            this.tree02Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree02Button.Name = "tree02Button";
-            this.tree02Button.Size = new System.Drawing.Size(61, 61);
-            this.tree02Button.Text = "Tree-02";
-            this.tree02Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird02Button.AutoSize = false;
+            this.Bird02Button.CheckOnClick = true;
+            this.Bird02Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird02Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird02Button.Image")));
+            this.Bird02Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird02Button.Name = "Bird02Button";
+            this.Bird02Button.Size = new System.Drawing.Size(61, 61);
+            this.Bird02Button.Text = "bird2";
+            this.Bird02Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree03Button
+            // Bird03Button
             // 
-            this.tree03Button.AutoSize = false;
-            this.tree03Button.CheckOnClick = true;
-            this.tree03Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree03Button.Image = ((System.Drawing.Image)(resources.GetObject("tree03Button.Image")));
-            this.tree03Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree03Button.Name = "tree03Button";
-            this.tree03Button.Size = new System.Drawing.Size(61, 61);
-            this.tree03Button.Text = "Tree-03";
-            this.tree03Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird03Button.AutoSize = false;
+            this.Bird03Button.CheckOnClick = true;
+            this.Bird03Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird03Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird03Button.Image")));
+            this.Bird03Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird03Button.Name = "Bird03Button";
+            this.Bird03Button.Size = new System.Drawing.Size(61, 61);
+            this.Bird03Button.Text = "bird3";
+            this.Bird03Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree04Button
+            // Bird04Button
             // 
-            this.tree04Button.CheckOnClick = true;
-            this.tree04Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree04Button.Image = ((System.Drawing.Image)(resources.GetObject("tree04Button.Image")));
-            this.tree04Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree04Button.Name = "tree04Button";
-            this.tree04Button.Size = new System.Drawing.Size(90, 68);
-            this.tree04Button.Text = "Tree-04";
-            this.tree04Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird04Button.CheckOnClick = true;
+            this.Bird04Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird04Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird04Button.Image")));
+            this.Bird04Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird04Button.Name = "Bird04Button";
+            this.Bird04Button.Size = new System.Drawing.Size(90, 68);
+            this.Bird04Button.Text = "bird4";
+            this.Bird04Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree05Button
+            // Bird05Button
             // 
-            this.tree05Button.CheckOnClick = true;
-            this.tree05Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree05Button.Image = ((System.Drawing.Image)(resources.GetObject("tree05Button.Image")));
-            this.tree05Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree05Button.Name = "tree05Button";
-            this.tree05Button.Size = new System.Drawing.Size(90, 68);
-            this.tree05Button.Text = "Tree-05";
-            this.tree05Button.ToolTipText = "Tree-05";
-            this.tree05Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird05Button.CheckOnClick = true;
+            this.Bird05Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird05Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird05Button.Image")));
+            this.Bird05Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird05Button.Name = "Bird05Button";
+            this.Bird05Button.Size = new System.Drawing.Size(90, 68);
+            this.Bird05Button.Text = "bird5";
+            this.Bird05Button.ToolTipText = "bird5";
+            this.Bird05Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree06Button
+            // Bird06Button
             // 
-            this.tree06Button.CheckOnClick = true;
-            this.tree06Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree06Button.Image = ((System.Drawing.Image)(resources.GetObject("tree06Button.Image")));
-            this.tree06Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree06Button.Name = "tree06Button";
-            this.tree06Button.Size = new System.Drawing.Size(90, 68);
-            this.tree06Button.Text = "Tree-06";
-            this.tree06Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird06Button.CheckOnClick = true;
+            this.Bird06Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird06Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird06Button.Image")));
+            this.Bird06Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird06Button.Name = "Bird06Button";
+            this.Bird06Button.Size = new System.Drawing.Size(90, 68);
+            this.Bird06Button.Text = "bird6";
+            this.Bird06Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
-            // tree07Button
+            // Bird07Button
             // 
-            this.tree07Button.CheckOnClick = true;
-            this.tree07Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tree07Button.Image = ((System.Drawing.Image)(resources.GetObject("tree07Button.Image")));
-            this.tree07Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tree07Button.Name = "tree07Button";
-            this.tree07Button.Size = new System.Drawing.Size(90, 68);
-            this.tree07Button.Text = "Tree-07";
-            this.tree07Button.Click += new System.EventHandler(this.treeButton_Click);
+            this.Bird07Button.CheckOnClick = true;
+            this.Bird07Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Bird07Button.Image = ((System.Drawing.Image)(resources.GetObject("Bird07Button.Image")));
+            this.Bird07Button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Bird07Button.Name = "Bird07Button";
+            this.Bird07Button.Size = new System.Drawing.Size(90, 68);
+            this.Bird07Button.Text = "bird7";
+            this.Bird07Button.Click += new System.EventHandler(this.BirdButton_Click);
             // 
             // lineButton
             // 
@@ -355,50 +374,18 @@
             this.lineButton.Text = "Line";
             this.lineButton.Click += new System.EventHandler(this.lineButton_Click);
             // 
-            // labelBoxButton
-            // 
-            this.labelBoxButton.AutoSize = false;
-            this.labelBoxButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.labelBoxButton.Image = ((System.Drawing.Image)(resources.GetObject("labelBoxButton.Image")));
-            this.labelBoxButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.labelBoxButton.Name = "labelBoxButton";
-            this.labelBoxButton.Size = new System.Drawing.Size(90, 40);
-            this.labelBoxButton.Text = "Label Box";
-            this.labelBoxButton.Click += new System.EventHandler(this.labelBoxButton_Click);
-            // 
-            // CloneElementBtn
-            // 
-            this.CloneElementBtn.CheckOnClick = true;
-            this.CloneElementBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CloneElementBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloneElementBtn.Image")));
-            this.CloneElementBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CloneElementBtn.Name = "CloneElementBtn";
-            this.CloneElementBtn.Size = new System.Drawing.Size(90, 68);
-            this.CloneElementBtn.Text = "Clone Element";
-            this.CloneElementBtn.Click += new System.EventHandler(this.CloneElementBtn_Click);
-            // 
-            // ScaleBtn
-            // 
-            this.ScaleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ScaleBtn.Image = ((System.Drawing.Image)(resources.GetObject("ScaleBtn.Image")));
-            this.ScaleBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ScaleBtn.Name = "ScaleBtn";
-            this.ScaleBtn.Size = new System.Drawing.Size(90, 68);
-            this.ScaleBtn.Text = "Resize (Scale)";
-            this.ScaleBtn.Click += new System.EventHandler(this.ScaleBtn_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1077, 945);
+            this.ClientSize = new System.Drawing.Size(1075, 913);
             this.Controls.Add(this.drawingToolStrip);
             this.Controls.Add(this.fileToolStrip);
             this.Controls.Add(this.drawingPanel);
             this.KeyPreview = true;
             this.Name = "MainForm";
-            this.Text = "Forest Drawing";
+            this.Text = "Bird Drawing";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
@@ -420,14 +407,14 @@
         private System.Windows.Forms.ToolStripButton saveButton;
         private System.Windows.Forms.ToolStrip drawingToolStrip;
         private System.Windows.Forms.ToolStripButton pointerButton;
-        private System.Windows.Forms.ToolStripButton tree01Button;
-        private System.Windows.Forms.ToolStripButton tree02Button;
-        private System.Windows.Forms.ToolStripButton tree03Button;
+        private System.Windows.Forms.ToolStripButton Bird01Button;
+        private System.Windows.Forms.ToolStripButton Bird02Button;
+        private System.Windows.Forms.ToolStripButton Bird03Button;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton tree04Button;
-        private System.Windows.Forms.ToolStripButton tree05Button;
-        private System.Windows.Forms.ToolStripButton tree06Button;
-        private System.Windows.Forms.ToolStripButton tree07Button;
+        private System.Windows.Forms.ToolStripButton Bird04Button;
+        private System.Windows.Forms.ToolStripButton Bird05Button;
+        private System.Windows.Forms.ToolStripButton Bird06Button;
+        private System.Windows.Forms.ToolStripButton Bird07Button;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel scaleLabel;
         private System.Windows.Forms.ToolStripTextBox scale;
@@ -435,7 +422,6 @@
         private System.Windows.Forms.ToolStripButton undoButton;
         private System.Windows.Forms.ToolStripButton redoButton;
         private System.Windows.Forms.ToolStripButton lineButton;
-        private System.Windows.Forms.ToolStripButton labelBoxButton;
         private System.Windows.Forms.ToolStripButton SetBackgroundBtn;
         private System.Windows.Forms.ToolStripButton ExportPNG;
         private System.Windows.Forms.ToolStripButton MoveSelectedButton;

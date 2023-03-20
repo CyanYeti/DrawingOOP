@@ -22,7 +22,7 @@ namespace AppLayer.Command
         }
         public override bool Execute()
         {
-            clone = TargetDrawing.GetSelected().Clone().Clone();
+            clone = TargetDrawing.GetSelected()?.Clone();
             if (clone == null) return false;
             clone.MoveToPoint(cloneSpot);
             TargetDrawing.Add(clone);

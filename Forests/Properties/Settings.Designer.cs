@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Forests.Properties {
+namespace Birds.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
